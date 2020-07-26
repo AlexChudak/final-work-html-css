@@ -1,0 +1,68 @@
+body {
+  background-color: $white-color;
+  color: $primary-text-color;
+  font-family: Open Sans, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+p,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1280px;
+  }
+}
+
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
